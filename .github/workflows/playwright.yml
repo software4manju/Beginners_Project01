@@ -6,7 +6,7 @@ on:
     branches: [main]
   schedule:
     - cron: '0 6 * * *' # Runs every day at 6 AM
-    - cron: '0 18 * * *' # Runs every day at 6 PM
+    - cron: '30 15  * * *' # Runs every day at 6 PM
   workflow_dispatch: # Allows manual triggering of the workflow
 jobs:
   test:
