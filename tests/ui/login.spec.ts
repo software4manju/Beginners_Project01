@@ -2,7 +2,7 @@ import { test, expect } from '../../fixtures/testFixtures';
 import { LoginPage } from '../../pages/LoginPage';
 import { users } from '../../test-data/users';
 
-test('standard user can log in successfully', async ({
+test('standard user can log in successfully @regression', async ({
   loginPageFixture,
   inventoryPageFixture,
 }) => {
