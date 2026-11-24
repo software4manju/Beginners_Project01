@@ -1,0 +1,15 @@
+{
+  "cookies": [
+    {
+      "name": "session_id",
+      "value": "example-session-value",
+      "domain": "example.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
