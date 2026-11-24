@@ -4,20 +4,15 @@ import { LoginPage } from '../pages/LoginPage';
 const authFile = 'playwright/.auth/user.json';
 
 setup('authenticate standard user', async ({ page }) => {
-
   const loginPage = new LoginPage(page);
 
   await loginPage.goto();
 
-  await loginPage.login(
-    'standard_user',
-    'secret_sauce'
-  );
+  await loginPage.login('standard_user', 'secret_sauce');
 
   await expect(page).toHaveURL(/inventory\.html/);
 
   await page.context().storageState({
-    path: authFile
+    path: authFile,
   });
-
 });

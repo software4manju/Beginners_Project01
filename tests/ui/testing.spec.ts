@@ -9,7 +9,6 @@ test('verify products', async ({ page }) => {
   await expect(inventoryPage.title).toBeVisible();
 });
 
-
 test('verify products2', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
 
@@ -17,6 +16,7 @@ test('verify products2', async ({ page }) => {
 
   await expect(inventoryPage.title).toBeVisible();
 });
+
 test('verify products3', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
 
@@ -24,6 +24,7 @@ test('verify products3', async ({ page }) => {
 
   await expect(inventoryPage.title).toBeVisible();
 });
+
 test('verify products4', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
 
@@ -31,6 +32,7 @@ test('verify products4', async ({ page }) => {
 
   await expect(inventoryPage.title).toBeVisible();
 });
+
 test('verify products5', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
 

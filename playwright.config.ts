@@ -1,4 +1,3 @@
-
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
@@ -9,7 +8,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://www.saucedemo.com',
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure'
+    screenshot: 'only-on-failure',
   },
 
   reporter: 'html',
@@ -17,7 +16,7 @@ export default defineConfig({
   projects: [
     {
       name: 'setup',
-      testMatch: /.*\.setup\.ts/
+      testMatch: /.*\.setup\.ts/,
     },
 
     {
@@ -26,10 +25,10 @@ export default defineConfig({
 
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json'
+        storageState: 'playwright/.auth/user.json',
       },
 
-      dependencies: ['setup']
-    }
-  ]
+      dependencies: ['setup'],
+    },
+  ],
 });

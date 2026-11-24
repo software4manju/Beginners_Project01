@@ -20,6 +20,7 @@ your-project-folder/
 ├── package.json           ← packages your project needs
 └── package-lock.json      ← exact versions installed
 
+##playwright.config.ts – Manages test execution
 
 Playwright.config.ts is not downloaded if we use -d command from above to get it use 
 npm init playwright@latest
@@ -60,7 +61,7 @@ another dependency combination
 Something behaves differently 🤯
 
 
-package.json
+###package.json- Manages your project
 
 "We need Playwright around
 this allowed version range."
@@ -115,8 +116,11 @@ Install what's specified by the existing lock file exactly and reproducibly.
 
         ↓
 
-6️⃣ package.json says
+6️⃣ package.json says " Manages your Project"
    what project dependencies are required
+
+   it tells Node.js and npm what your project contains
+   Which packages it need and what commands it can execute.
 
         ↓
 

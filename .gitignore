@@ -1,7 +1,7 @@
 node_modules/
-test-results/
 playwright-report/
-playwright/.cache/
+test-results/
+trace/
 playwright/.auth/
+playwright/user.json
 .env
-.env.*

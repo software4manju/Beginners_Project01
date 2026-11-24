@@ -8,7 +8,7 @@ export class InventoryPage {
     this.page = page;
     this.title = page.getByText('Products', { exact: true });
   }
-//  async addProductToCart() { ... }
-//async openCart() { ... }
-//async sortProducts() { ... }
+  //  async addProductToCart() { ... }
+  //async openCart() { ... }
+  //async sortProducts() { ... }
 }

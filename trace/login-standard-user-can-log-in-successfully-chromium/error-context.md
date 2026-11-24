@@ -21,34 +21,34 @@ Call log:
 # Test source
 
 ```ts
-  1  | 
+  1  |
   2  | import { Page, Locator } from '@playwright/test';
-  3  | 
+  3  |
   4  | export class LoginPage {
   5  |   readonly page: Page;
   6  |   readonly usernameInput: Locator;
   7  |   readonly passwordInput: Locator;
   8  |   readonly loginButton: Locator;
-  9  | 
+  9  |
   10 |   constructor(page: Page) {
   11 |     this.page = page;
-  12 | 
+  12 |
   13 |     this.usernameInput = page.getByPlaceholder('Username');
   14 |     this.passwordInput = page.getByPlaceholder('Password');
   15 |     this.loginButton = page.getByRole('button', { name: 'Login' });
   16 |     //this.loginButton = page.getByRole('button', { name: 'Submit ' });
   17 |   }
-  18 | 
+  18 |
   19 |   async goto() {
 > 20 |     await this.page.goto('/');
      |                     ^ Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
   21 |   }
-  22 | 
+  22 |
   23 |   async login(username: string, password: string) {
   24 |     await this.usernameInput.fill(username);
   25 |     await this.passwordInput.fill(password);
   26 |     await this.loginButton.click();
   27 |   }
   28 | }
-  29 | 
+  29 |
 ```
