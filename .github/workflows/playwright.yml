@@ -1,4 +1,4 @@
-name: CiCd Pipeline for Beginner Project
+name: CiCd Pipeline Project01
 on:
   push:
     branches: [ main ]
