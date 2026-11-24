@@ -1,7 +1,7 @@
 import { test, expect } from '../../fixtures/testFixtures';
 import { InventoryPage } from '../../pages/InventoryPage';
 
-test('verify products', async ({ page }) => {
+test('verify products @regression', async ({ page }) => {
   const inventoryPage = new InventoryPage(page);
 
   await page.goto('/inventory.html');
