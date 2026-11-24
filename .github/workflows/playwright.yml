@@ -4,6 +4,10 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: '0 6 * * *' # Runs every day at 6 AM
+    - cron: '0 18 * * *' # Runs every day at 6 PM
+  workflow_dispatch: # Allows manual triggering of the workflow
 jobs:
   test:
     runs-on: ubuntu-latest
